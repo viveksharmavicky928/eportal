@@ -3,14 +3,17 @@
     <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
             <li>
-                <a routerLinkActive="active" routerLink="list">List</a>
+                <a routerLink="list">List</a>
             </li>
             <li>
-                <a routerLinkActive="active"  routerLink="edit/0">Create</a>
+                <a routerLink="edit/0">Create</a>
             </li>
         </ul>
     </nav>
-
+    <div *ngIf ="showLoadingIndicator" class="spinner">
+    </div>
     <router-outlet></router-outlet>
+
 </div> 
+
 
